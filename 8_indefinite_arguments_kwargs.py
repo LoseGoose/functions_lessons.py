@@ -1,7 +1,10 @@
 
 # Indefinite Arguments (**kwargs) Practice #1
 # Create a function called number_attributes that counts the number of parameters that are passed, and returns that number as the result.
+def number_attributes(**kwargs):
+    return len(kwargs)
 
+print(number_attributes(a=1, b=2, c=3))  # Should return 3
 
 
 
@@ -12,7 +15,9 @@
 
 # Indefinite Arguments (**kwargs) Practice #2
 # Create a function called list_attributes that returns in the form of a list the values of the attributes given in the form of keywords. The function must expect to receive any number of arguments of this type.
-
+def list_attributes(**kwargs):
+    return list(kwargs.values())
+print(list_attributes(color="red", size="M", price=19.99))  # Should return ['red', 'M', 19.99] 
 
 
 

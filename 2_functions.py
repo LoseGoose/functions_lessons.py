@@ -27,3 +27,19 @@
 # The name of the argument that this function must take is number. Create this variable and assign it any number.
 
 # You should only define the function and create the variable, you should not call the function afterwards.
+
+# Create Functions Practice #1
+def greet():
+    print("Hello world!")
+greet()
+
+# Create Functions Practice #2
+def welcome(name):
+    print(f"Welcome {name}!")
+welcome("Benji")
+
+
+# Create Functions Practice #3
+def square(number):
+    print(number ** 2)
+square(7)
